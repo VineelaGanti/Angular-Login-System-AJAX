@@ -1,0 +1,31 @@
+﻿<div>
+    <a href="#/newcontact">Add New Conact</a> <br />
+
+    <table class="table table-hover">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Mobile</th>
+        </tr>
+
+        <tr ng-repeat="contact in contacts">
+            <td>
+                {{contact.FirstName}}
+            </td>
+            <td>
+                {{contact.LastName}}
+            </td>
+            <td>
+                {{contact.Email}}
+            </td>
+            <td>{{contact.City}}</td>
+            <td>{{contact.State}}</td>
+            <td>{{contact.Zip}}</td>
+            <td>{{contact.Mobile}}</td>
+        </tr>
+    </table>
+</div>
